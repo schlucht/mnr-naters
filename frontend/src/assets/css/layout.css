@@ -1,0 +1,10 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#landingPage {
+    display: grid;
+    grid-template-rows: 100vh 1fr 25%
+}
