@@ -1,0 +1,8 @@
+/.env*
+/data*
+!.keepme
+/.idea
+!.env.dist
+!Config.php
+.DS_STORE
+vendor
