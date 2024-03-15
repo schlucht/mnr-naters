@@ -1,0 +1,39 @@
+:root {    
+    --primary: #009640;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'mnr-serif';
+    src: url('https://cdn.mnr.ch/d0a509a/fonts/3d3282e8-e471-4944-a58d-d4f21fcbf521.woff2');
+}
+@font-face {
+    font-family: 'mnr-serif-bold';
+    src: url('https://cdn.mnr.ch/d0a509a/fonts/9d126602-aa08-42ca-8df3-8c2d29b77364.woff2');
+}
+@font-face {
+    font-family: 'mnr-sans';
+    src: url('https://cdn.mnr.ch/d0a509a/fonts/71835da3-739d-453e-b3b5-79658493ed44.woff2');
+}
+@font-face {
+    font-family: 'mnr-sans-bold';
+    src: url('https://cdn.mnr.ch/d0a509a/fonts/1c8a3b4f-c749-4e41-a712-de3ab5af73cf.woff2');
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'mnr-sans';    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'mnr-serif-bold';
+}

@@ -1,4 +1,16 @@
-Title: Home
+Title: Startseite
+
+----
+
+Headertitle: Evangelische Gemeinde
+
+----
+
+Subtitle: Mitternachtsruf Naters
+
+----
+
+Text: Willkommen auf der Webseite der freien evangelischen Gemeinde des Mitternachtsruf in Naters
 
 ----
 

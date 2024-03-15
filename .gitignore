@@ -6,3 +6,4 @@
 !Config.php
 .DS_STORE
 vendor
+node_modules
