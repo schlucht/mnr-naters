@@ -1,5 +1,12 @@
 :root {    
-    --primary: #009640;
+    --clr-green: #009640;
+    --clr-light-green: ;
+    --clr-light-gray: #f1f2f2;
+
+    --fc-white: #fff;
+    --fc-black: #000;
+
+    --hover: opacity .3s ease-out, color .3s ease-out;
 }
 
 *,*::after,*::before {
@@ -37,3 +44,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'mnr-serif-bold';
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    opacity: .6;
+    transition: var(--hover);
+}
+

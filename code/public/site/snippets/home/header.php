@@ -1,4 +1,4 @@
-<header class="bg-green">
+<header>
     <?php $img = $page->image('mnr_black.svg') ;?>
 
     <img src="<?= $page->image()->url() ?>" height="200" width="200" />    

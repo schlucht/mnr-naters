@@ -2,7 +2,7 @@
     $menu = $pages->listed();
 ?>
 
-<nav class="bg-red">
+<nav>
     <?php foreach ($menu as $page): ?>
         <a href="<?= $page->url() ?>"><?= $page->title() ?></a>
     <?php endforeach ?>
