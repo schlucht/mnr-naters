@@ -7,7 +7,7 @@ Class Router
 {
     private $routes = [];
     public  Container $container;
-    private $controllerAction;
+    // private $controllerAction;
     public function __construct(Container $container)
     {
         $this->container = $container;
@@ -15,8 +15,9 @@ Class Router
 
     public function add($method, $path, $controller, $action)
     {
-        $this->controllerAction = $controller . '@' .$action;        
-        $this->routes[$method][$path] = $this->controllerAction;        
+        $controllerAction = $controller . '@' .$action;   
+        $path = '/mnr' . $path;     
+        $this->routes[$method][$path] = $controllerAction;        
     }
 
     public function dispach() 

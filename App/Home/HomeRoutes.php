@@ -10,7 +10,7 @@ Class HomeRoutes
 {
     public static function routes(Router $router)
     {
-        $router->add('GET', '/mnr/', 'HomeController', 'index');
+        $router->add('GET', '/', 'HomeController', 'index');
 
         return $router;
     }

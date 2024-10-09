@@ -23,6 +23,7 @@
         <li><a class="link link-white" href="https://gemeinde.mnr.ch/termine/">Termine (Dübendorf)</a></li>
         <li><a class="link link-white" href="#">Gottesdienste</a></li>
         <li><a class="link link-white" href="#">Bibel/Gebetsstunde</a></li>
+        <li><a class="link link-white" href="<?=ROOT?>/admin">Admin</a></li>
       </ul>
     </nav>
     <nav class="mobile-nav">
@@ -34,6 +35,7 @@
         <li><a class="link link-white" href="https://gemeinde.mnr.ch/termine/">Termine (Dübendorf)</a></li>
         <li><a class="link link-white" href="#">Gottesdienste</a></li>
         <li><a class="link link-white" href="#">Bibel/Gebetsstunde</a></li>
+        <li><a class="link link-white" href="<?=ROOT?>/admin">Admin</a></li>
       </ul>
     </nav>
   </header>

@@ -1,16 +1,16 @@
 <?php
 
-namespace OTS\App\User;
+namespace OTS\App\Admin;
 
 use OTS\App\Core\Router;
 
 defined('ROOTPATH') OR exit('No direct script access allowed');
 
-Class UserRoutes
+Class AdminRoutes
 {
     public static function routes(Router $router)
     {
-        $router->add('GET', '/user', 'UserController', 'index');
+        $router->add('GET', '/admin', 'AdminController', 'index');
 
         return $router;
     }
