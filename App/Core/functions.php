@@ -38,5 +38,5 @@ function get_date($date)
 }
 
 function snippets($path, $data=[]) {
-    require_once $path;
+    require_once SNIPPET . $path . '.php';    
 }
