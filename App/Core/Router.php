@@ -38,7 +38,8 @@ Class Router
             }
         }      
         http_response_code(404);
-        echo "404 Not Found";
+        $notFound = $this->container->build('notfoundcontroller');
+        $notFound->index();
     }
 
     private function formatRoute($route)

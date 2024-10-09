@@ -17,8 +17,19 @@ Class Controller
 
     public function render(string $view, array $params = [])
     {
-        $data = array_merge($this->data, $params);
+        if(!empty($params))
+        {
+            $data = array_merge($this->data, $params);
+            extract($data);
+        }
+        $filename = __DIR__ . "/../{$this->folder}/Views/$view.php";
 
-        require(__DIR__ . "/../{$this->folder}/Views/$view.php");
+        if(file_exists($filename))
+        {
+            require_once $filename;
+            return;
+        }
+
+        // require(__DIR__ . "/../NotFound/Views/NotFoundView.php");
     }
 }
