@@ -7,3 +7,4 @@
 .DS_STORE
 vendor
 node_modules
+config.php
