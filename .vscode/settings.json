@@ -1,3 +1,18 @@
 {
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+
+    "liveSassCompile.settings.autoprefix": "defaults",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/assets/css",
+            "savePathReplacementPairs": null
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/assets/css"
+        }
+    ]
 }
