@@ -14,5 +14,8 @@
             "extensionName": ".min.css",
             "savePath": "/assets/css"
         }
+    ],
+    "liveSassCompile.settings.partialsList": [
+        "/partials/**/_*.s[ac]ss"
     ]
 }

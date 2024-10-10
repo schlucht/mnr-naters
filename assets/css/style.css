@@ -78,6 +78,10 @@ a {
   --hover: opacity .3s ease-out, color .3s ease-out;
 }
 
+body {
+  background-color: red;
+}
+
 /***************************************/
 /*
 /* LINKS
@@ -86,21 +90,17 @@ a {
 a {
   text-transform: uppercase;
 }
-
 a:hover {
   opacity: 0.6;
   transition: var(--hover);
   color: var(--clr-light-green);
 }
-
 a.link-green {
   color: var(--clr-green);
 }
-
 a.link-white {
   color: var(--fc-white);
 }
-
 a.link {
   font-family: "mnr-sans";
   font-weight: 500;
@@ -116,7 +116,6 @@ a.link {
     font-size: 1.5rem;
   }
 }
-
 a.link::before {
   content: "";
   display: block;
@@ -130,16 +129,17 @@ a.link::before {
   scale: 0;
   transform-origin: 100% 50%;
 }
-
 a.link:hover {
   transition: var(--hover);
   color: var(--clr-light-green);
   opacity: 0.6;
 }
-
 a.link:hover::before {
   scale: 1;
   transform-origin: 0 50%;
+}
+a {
+  background-color: red;
 }
 
 /*************************************************************/
@@ -167,7 +167,6 @@ header {
   text-align: left;
   display: flex;
 }
-
 .brand img {
   display: inline-block;
   width: 6rem;
@@ -202,8 +201,7 @@ header {
     line-height: 2.8rem;
   }
 }
-
-.header-title h3 {
+.header-title h1 h3 {
   font-family: "mnr-serif";
   font-weight: 400;
   text-align: left;
@@ -221,7 +219,6 @@ header {
     display: block;
   }
 }
-
 .hamburger span {
   display: block;
   position: relative;
@@ -230,7 +227,6 @@ header {
   background-color: var(--fc-white);
   text-align: center;
 }
-
 .hamburger span::before {
   content: "";
   position: absolute;
@@ -242,7 +238,6 @@ header {
   background-color: var(--fc-white);
   border-radius: 2px;
 }
-
 .hamburger span::after {
   content: "";
   position: absolute;
@@ -268,12 +263,10 @@ header {
     display: none;
   }
 }
-
 .page-nav ul {
   display: flex;
   justify-content: space-between;
 }
-
 .page-nav ul li > a {
   font-size: 1.6rem;
   font-weight: 800;
@@ -315,11 +308,9 @@ header {
   top: 12px;
   right: 10%;
 }
-
 .mobile-nav .nav-close span {
   position: relative;
 }
-
 .mobile-nav .nav-close span::before {
   position: absolute;
   content: "";
@@ -332,8 +323,7 @@ header {
   right: 0;
   bottom: auto;
 }
-
-.mobile-nav .nav-close span::after {
+.mobile-nav .nav-closespan::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -347,10 +337,7 @@ header {
 }
 
 body {
-  background: red;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: var(--ff-sans);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,11 @@
-@import "reset.scss";
-@import "typography.scss";
-@import "variables.scss";
-@import "base.scss";
-@import "layout.scss";
-@import "header.scss";
+@import "partials/reset.scss";
+@import "partials/typography.scss";
+@import "partials/variables.scss";
+@import "partials/base.scss";
+@import "partials/layout.scss";
+@import "partials/header.scss";
 
 body {
-    background: red;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: var(--ff-sans);
 }
 /*# sourceMappingURL=style.css.map */
