@@ -1,6 +1,6 @@
 
 css:
-	sass ./sass/style.scss ./sass/main.css -s compressed
+	@sass --style=compressed ./sass/style.scss ./assets/css/style.min.css
 
-eco:
-	echo "Hallo"
+watch:
+	@sass --watch ./sass/style.scss:./assets/css/style.css
