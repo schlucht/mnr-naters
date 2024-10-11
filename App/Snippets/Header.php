@@ -11,3 +11,4 @@
   <link href="<?=STYLE?>/style.min.css" rel='stylesheet'>
 </head>
 <body>
+<main class="page">

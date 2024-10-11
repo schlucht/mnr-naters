@@ -1,8 +1,28 @@
 .site-info {
     text-align: center;
-    color: var(--fc-white);
-    font-family: 'mnr-serif';
-
+    color: var(--fc-white);    
+    height: 20rem;
+    margin-right: 10rem;
+    transition: all .5s;
+    & p {
+        font-family: 'mnr-serif';
+        font-size: 2.6rem;
+        @media screen and (max-width: 900px) {
+            font-size: 2.0rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 1.6rem;
+        }
+    }
+    & a {
+        font-size: 3.5rem;
+        @media screen and (max-width: 900px) {
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 2.0rem;
+        }
+    }
 }
 
 .brand {    
@@ -17,8 +37,6 @@
     }    
 }
 
-
-
 .header-title h1, h3 {
     color: var(--fc-white);
     text-wrap: nowrap;
@@ -28,10 +46,10 @@
 }
 
 .header-title h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 300;
     line-height: 3.5rem; 
-    @media (max-width: 580px) {
+    @media (max-width: 900px) {
         font-size: 3.2rem;
         line-height: 3.2rem;
     }
@@ -40,8 +58,9 @@
         line-height: 2.8rem;
     }
     & h3 {
+        font-size: 4rem;
         font-family: 'mnr-serif';
-        font-weight: 400;
+        font-weight: 300;
         text-align: left;    
     }
 }
@@ -52,7 +71,7 @@
     position: absolute;
     top: 3rem;
     right: 10rem;
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
         display: block;
     }
     & span{
@@ -95,7 +114,7 @@
 
 .page-nav {
     margin-top: 12rem;
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
         display: none;
     } 
     & ul {

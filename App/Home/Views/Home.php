@@ -1,8 +1,8 @@
 <?php  snippets('Header'); ?>
-<?php  snippets('HomeNav'); ?>
-  
-  <main>
+
+
+    <?php  snippets('HomeNav'); ?>
     <a class="link link-green" href="#">Hello, world!</a>
-  </main>
+
 
 <?php  snippets('Footer'); ?>
