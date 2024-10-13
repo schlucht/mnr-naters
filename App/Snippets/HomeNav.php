@@ -1,7 +1,22 @@
 <header>
     <div class="hamburger">
-      <span></span>
+      <input type="checkbox" checked id="openNav">
+      <label for="openNav">
+        <span></span>
+      </label>
     </div>
+    <nav class="mobile-nav">
+      <div class="nav-close">
+        <span></span>
+      </div>
+      <ul class="nav-mobile-main" role="list">
+        <li><a class="link link-white" href="#">Gemeinde</a></li>
+        <li><a class="link link-white" href="https://gemeinde.mnr.ch/termine/">Termine (Dübendorf)</a></li>
+        <li><a class="link link-white" href="#">Gottesdienste</a></li>
+        <li><a class="link link-white" href="#">Bibel/Gebetsstunde</a></li>
+        <li><a class="link link-white" href="<?=ROOT?>/admin">Admin</a></li>
+      </ul>
+    </nav>
     <div class="brand">
       <img src="<?=LOGOS?>/mnr.svg" alt="logo">
       <div class="header-title">
@@ -26,16 +41,5 @@
         <li><a class="link link-white" href="<?=ROOT?>/admin">Admin</a></li>
       </ul>
     </nav>
-    <nav class="mobile-nav">
-      <div class="nav-close">
-        <span></span>
-      </div>
-      <ul class="nav-mobile-main" role="list">
-        <li><a class="link link-white" href="#">Gemeinde</a></li>
-        <li><a class="link link-white" href="https://gemeinde.mnr.ch/termine/">Termine (Dübendorf)</a></li>
-        <li><a class="link link-white" href="#">Gottesdienste</a></li>
-        <li><a class="link link-white" href="#">Bibel/Gebetsstunde</a></li>
-        <li><a class="link link-white" href="<?=ROOT?>/admin">Admin</a></li>
-      </ul>
-    </nav>
+    
   </header>

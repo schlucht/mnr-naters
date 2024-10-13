@@ -1,11 +1,10 @@
-
-:root {    
+:root {
     --clr-green: #009640;
     --clr-light-green: #7bdcb5;
     --clr-light-gray: #f1f2f2;
 
-    --clr-card: rgb(182,227,212);
-    --clr-card-hoover: rgb(255,245,203);
+    --clr-card: rgb(182, 227, 212);
+    --clr-card-hoover: rgb(255, 245, 203);
 
     --fc-white: #fff;
     --fc-black: #000;
@@ -16,4 +15,16 @@
     --ff-serif: 'mnr-serif';
 
     --hover: opacity .3s ease-out, color .3s ease-out;
+}
+
+$xl: 87.5em; // 4k und hochauflösender Desktop
+$lg: 60em; // 1080 und hochauflösende Laptops
+$med: 40em; // hochauflösende Tablets und laptops mit niedrigen Res
+$sm: 28em; // mobile und niedrigauflösende Tablets
+$xs: 20em; // nur mobil
+
+@mixin responsiv($query) {
+    @media (max-width: $query) {
+        @content;
+    }
 }

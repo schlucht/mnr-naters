@@ -16,7 +16,8 @@ header {
     text-align: center;
     height: 100vh;
     position: realtive;
-    @media screen and (max-width: 900px) {
+
+    @include responsiv($lg) {
         height: 50vh;
     }
 }

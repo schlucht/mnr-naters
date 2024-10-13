@@ -1,46 +1,55 @@
 .site-info {
     text-align: center;
-    color: var(--fc-white);    
+    color: var(--fc-white);
     height: 20rem;
     margin-right: 10rem;
     transition: all .5s;
+
     & p {
         font-family: 'mnr-serif';
         font-size: 2.6rem;
-        @media screen and (max-width: 900px) {
+
+        @include responsiv($lg) {
             font-size: 2.0rem;
         }
-        @media screen and (max-width: 600px) {
+
+        @include responsiv($med) {
             font-size: 1.6rem;
         }
     }
+
     & a {
         font-size: 3.5rem;
-        @media screen and (max-width: 900px) {
+
+        @include responsiv($lg) {
             font-size: 2.5rem;
         }
-        @media screen and (max-width: 600px) {
+
+        @include responsiv($med) {
             font-size: 2.0rem;
         }
     }
 }
 
-.brand {    
+.brand {
     margin-bottom: 12rem;
     text-align: left;
     display: flex;
+
     & img {
         display: inline-block;
         width: 6rem;
         height: auto;
         margin-right: 1rem;
-    }    
+    }
 }
 
-.header-title h1, h3 {
+.header-title h1,
+h3 {
     color: var(--fc-white);
     text-wrap: nowrap;
-    @media (max-width: 580px) {
+
+    @include responsiv($med) {
         text-wrap: wrap;
     }
 }
@@ -48,61 +57,76 @@
 .header-title h1 {
     font-size: 6rem;
     font-weight: 300;
-    line-height: 3.5rem; 
-    @media (max-width: 900px) {
+    line-height: 0rem;
+
+    @include responsiv($lg) {
         font-size: 3.2rem;
-        line-height: 3.2rem;
+        line-height: 2.3rem;
     }
-    @media (max-width: 456px) {
+
+    @include responsiv($med) {
         font-size: 2.8rem;
-        line-height: 2.8rem;
-    }
-    & h3 {
-        font-size: 4rem;
-        font-family: 'mnr-serif';
-        font-weight: 300;
-        text-align: left;    
+        line-height: 2.3rem;
     }
 }
 
+.header-title h3 {
+    font-size: 4rem;
+    font-family: 'mnr-serif';
+    font-weight: 300;
+    text-align: left;
+    line-height: 2.6rem;
+}
+
 .hamburger {
-    cursor: pointer;    
     display: none;
     position: absolute;
     top: 3rem;
     right: 10rem;
-    @media (max-width: 900px) {
+
+    @include responsiv($lg) {
         display: block;
     }
-    & span{
+
+    & label {
+        cursor: pointer;
+    }
+
+    & #openNav:checked .page-nav {
+        
+    }
+
+    & label span {
         display: block;
         position: relative;
         height: 2px;
-        width: 24px;  
+        width: 24px;
         background-color: var(--fc-white);
-        text-align: center; 
+        text-align: center;
+
         &::before {
             content: '';
             position: absolute;
-            height: 2px;    
+            height: 2px;
             top: -7px;
             left: 2px;
             right: 2px;
             bottom: auto;
-            background-color: var(--fc-white);   
+            background-color: var(--fc-white);
             border-radius: 2px;
         }
+
         &::after {
-            content: '';   
+            content: '';
             position: absolute;
-            height: 2px;   
+            height: 2px;
             bottom: 0px;
             left: 2px;
             right: 2px;
             top: 7px;
-            background-color: var(--fc-white);    
+            background-color: var(--fc-white);
             border-radius: 2px;
-        } 
+        }
     }
 }
 
@@ -114,21 +138,26 @@
 
 .page-nav {
     margin-top: 12rem;
-    @media (max-width: 900px) {
+
+    @include responsiv($lg) {
         display: none;
-    } 
-    & ul {
-        display: flex; 
-        justify-content: space-between;
     }
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
     & ul li>a {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
         font-weight: 800;
     }
 }
 
 .mobile-nav {
-    position: absolute;    
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -138,14 +167,14 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding: 30% 2rem;   
+    padding: 30% 2rem;
 }
 
 .open-nav {
     display: flex;
 }
 
-.mobile-nav ul {    
+.mobile-nav ul {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -153,7 +182,7 @@
     align-items: center;
 }
 
-.mobile-nav .nav-close {    
+.mobile-nav .nav-close {
     height: 36px;
     width: 36px;
     color: var(--fc-white);
@@ -162,9 +191,11 @@
     position: absolute;
     top: 12px;
     right: 10%;
+
     & span {
-        position: relative;    
+        position: relative;
     }
+
     & span::before {
         position: absolute;
         content: '';
@@ -177,6 +208,7 @@
         right: 0;
         bottom: auto;
     }
+
     &span::after {
         position: absolute;
         content: '';
