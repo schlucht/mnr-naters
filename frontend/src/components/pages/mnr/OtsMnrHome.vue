@@ -1,0 +1,3 @@
+<template>
+    MNR Homepage
+</template>
