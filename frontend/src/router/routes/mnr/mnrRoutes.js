@@ -5,6 +5,7 @@ const mnrRoutes = [
         path: '/',
         name: 'home',
         component: OtsMnrHome,
+        meta: {title: 'Startseite'},
     },
 ];
 
