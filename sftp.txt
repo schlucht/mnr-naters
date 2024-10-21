@@ -1,0 +1,3 @@
+lcd /public
+put index.html
+quit

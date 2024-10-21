@@ -18,3 +18,5 @@ upload: build copy
 start:
 	@cd frontend/ && npm run dev
 
+ftp:
+	sftp -b sftp.txt schmidschlucht.ch2@ftp.netzone.ch
