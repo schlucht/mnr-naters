@@ -1,10 +1,9 @@
-import OtsMnrHome from "../../../components/pages/mnr/OtsMnrHome.vue";
 
 const mnrRoutes = [
     {
         path: '/',
         name: 'home',
-        component: OtsMnrHome,
+        component: () => import("../../../components/pages/mnr/OtsMnrHome.vue"),
         meta: {title: 'Startseite'},
     },
 ];
