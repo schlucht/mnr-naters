@@ -4,7 +4,7 @@
       document.write(Date())
     </script>
   </footer>
-  <script type="module" src="./main.js"></script>
+  <script type="module" src="./main.ts"></script>
 </body>
 </html>
 
